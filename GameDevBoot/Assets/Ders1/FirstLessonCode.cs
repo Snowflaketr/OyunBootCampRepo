@@ -26,6 +26,7 @@ public class FirstLessonCode : MonoBehaviour
     int toplam;
     int cift;
     int tek;
+    int faksayi=7;
 
     bool hayattamý = true;
 
@@ -46,7 +47,7 @@ public class FirstLessonCode : MonoBehaviour
         sayi();
 
     }
-    private void boykiloendeks()
+    private void boykiloendeks()// hatalý
     {
         if (Endeks == sonuc)
         {
@@ -74,7 +75,12 @@ public class FirstLessonCode : MonoBehaviour
             tek = i += 2;
             Debug.Log("tekler" + tek);
         }
-       
+        for (int i = faksayi; i < 1; i++)  // hatalý
+        {
+            faktoriyel *= i;
+
+            Debug.Log("faktoriyel"+faksayi + "! " + faktoriyel);
+        }
 
     }
 }
